@@ -1,0 +1,121 @@
+@import "reset"
+
+body
+  background #91A2C0
+  font bold 18px "Helvetica Neue", Arial, Helvetica, sans-serif
+
+ul
+  list-style-type none
+
+/* Default font settings */
+body
+  font-size 15px
+  color #666
+  background #fff
+  font-family "KievitPro", "ff-kievit-web-pro-1","ff-kievit-web-pro-2", "Helvetica Neue", Arial, Helvetica, sans-serif
+
+/* Headings */
+h1,h2,h3,h4
+  font-weight normal
+  color #222
+  clear left
+
+h1
+  font-size 1.5em
+  line-height 1.4
+  margin-bottom 0.5em
+h2
+  font-size 1.2em
+  font-weight bold
+  line-height 1
+  margin-bottom 0.5em
+
+/* Text elements */
+p
+  margin 0 0 1.5em
+
+a:focus, a:hover
+  text-decoration underline
+a
+  text-decoration none
+  cursor pointer
+
+/* Lists */
+ul, ol
+  margin 0 1.5em 1.5em 0
+  list-style-type none
+
+#map-view
+  background-color #eee
+  min-height 500px
+  position relative
+
+.story
+  background-color #fafcb9
+  border 1px solid #ccc
+  padding 10px 15px 20px 15px
+  text-align center
+  width 120px
+  min-height 40px
+  font-size 80%
+  position absolute
+
+  input
+    display none
+    width 115px
+
+  span
+    display inline-block
+    width 5px
+    height 10px
+
+  .frequency
+    position absolute
+    left 5px
+    bottom 2px
+
+    span
+      background-color #edd
+      margin-right 1px
+      display none
+
+      &.checked
+        background-color #f00
+        display inline-block
+
+  .value
+    position absolute
+    right 5px
+    bottom 2px
+
+    span
+      background-color #dde
+      margin-left 1px
+      display none
+
+      &.checked
+        background-color #00f
+        display inline-block
+
+  .remove
+    position absolute
+    top 5px
+    right 5px
+    display none
+
+  &:hover
+    .remove
+      display block
+
+    .value span, .frequency span
+      display inline-block
+
+  &.editing
+    h2
+      display none
+
+    h3
+      display none
+
+    input
+      display block
