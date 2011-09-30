@@ -1,2 +1,2 @@
-<textarea id="import-stories"></textarea>
+<textarea placeholder="Paste stories from spreadsheet here"></textarea>
 <button>Import</button>
