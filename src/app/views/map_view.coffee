@@ -11,7 +11,6 @@ class exports.MapView extends Backbone.View
     view = new StoryView model: story
     $(@el).append view.render().el
     $(view.el).draggable
-      containment: @el
       stop: =>
         story.save
           top: $(view.el).css 'top'

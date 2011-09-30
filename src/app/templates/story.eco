@@ -2,16 +2,16 @@
 <input class="title" value="<%= @story.title %>" type="text">
 <h3 class="user"><%= @story.user %></h3>
 <input class="user" value="<%= @story.user %>" type="text">
-<div class="frequency">
-  <span class="lowest"></span>
-  <span class="low"></span>
-  <span class="medium"></span>
-  <span class="high"></span>
-  <span class="highest"></span>
-</div>
 <div class="value">
+  <span class="low"></span>
+  <span class="medium"></span>
+  <span class="high"></span>
+</div>
+<div class="frequency">
+  <span class="highest"></span>
   <span class="high"></span>
   <span class="medium"></span>
   <span class="low"></span>
+  <span class="lowest"></span>
 </div>
 <a class="remove">X</a>
